@@ -1,0 +1,11 @@
+Model Information:
+* title:	Athena des Myron
+* source:	https://sketchfab.com/3d-models/athena-des-myron-afae6267a4f6466d9c47476d052e7262
+* author:	Antikensammlung Kiel (https://sketchfab.com/antikensammlung_kiel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Athena des Myron" (https://sketchfab.com/3d-models/athena-des-myron-afae6267a4f6466d9c47476d052e7262) by Antikensammlung Kiel (https://sketchfab.com/antikensammlung_kiel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
