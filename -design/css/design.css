@@ -1,0 +1,97 @@
+@font-face{
+    font-family: "Abhaya-Bold";
+    src:url("/font/AbhayaLibre-Bold.ttf");
+  }
+  @font-face{
+    font-family: "Abhaya-ExtraBold";
+    src:url("/font/AbhayaLibre-ExtraBold.ttf");
+  }
+  @font-face{
+    font-family: "Abhaya-Medium";
+    src:url("/font/AbhayaLibre-Medium.ttf");
+  }
+  @font-face{
+    font-family: "Abhaya-Regular";
+    src:url("/font/AbhayaLibre-Regular.ttf");
+  }
+  @font-face{
+    font-family: "Abhaya-SemiBold";
+    src:url("/font/AbhayaLibre-SemiBold.ttf")
+  }
+body{
+    margin: 0;
+}
+/* body::before{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 1;
+    z-index: 999;
+    transition: opacity 0.5s ease-in-out; 
+} */
+/* body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+  filter: grayscale(100%); 
+} */
+.banner{
+    width:100%;
+    height:105px;
+    background-color: transparent;
+    z-index: 999;
+}
+.trueban{
+    display: flex;
+    width: 80%;
+    margin:0 auto;
+}
+.newlink{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    width: 100%;
+    height: 600px;
+    margin-top: 0;
+    background-color:transparent;
+}
+.cards{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.cardsitem {
+    width: 33.33%;
+    height: 500px;
+    /* margin: 20px; */
+    background-color: transparent;
+}
+.cardpic{
+    width: 80%;
+    height: 350px;
+    background-color: aqua;
+    margin:30px auto; 
+}
+.cardname{
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    margin: 0 auto;
+}
+.cardintro{
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    margin: 0 auto;
+}
