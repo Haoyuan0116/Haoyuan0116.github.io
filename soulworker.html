@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulworker - Chehaoyuan</title>
+    <link rel="stylesheet" href="./css/portfoliostyle.css">
+    <style>
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .project-hero {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+        }
+
+        .project-hero h1 {
+            font-size: 32px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .project-hero .subtitle {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .project-link-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .project-link-btn:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            background-color: #fff;
+            border: 2px solid #333;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .section-content {
+            padding-left: 10px;
+        }
+
+        .step {
+            margin-bottom: 25px;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .step-desc {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            padding-left: 34px;
+        }
+
+        .sub-step {
+            margin-top: 10px;
+            padding-left: 34px;
+        }
+
+        .sub-step-title {
+            font-size: 13px;
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .sub-step-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .sub-step-list li {
+            font-size: 13px;
+            color: #555;
+            padding: 4px 0;
+            position: relative;
+        }
+
+        .sub-step-list li::before {
+            content: "›";
+            position: absolute;
+            left: -15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?394230268d0f754de608eb4e72165042";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="./index.html" class="logo-link">
+                <div class="logo-image"></div>
+            </a>
+            <span class="logo-text">Chehaoyuan</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <a href="./portfolio.html" class="back-link">← Back to Portfolio</a>
+
+        <div class="project-hero">
+            <h1>SOULWORKER</h1>
+            <p class="subtitle">AI-powered Human Task Assistant</p>
+            <div class="project-links">
+                <a href="https://github.com/Haoyuan0116/TimelineForClawd" class="project-link-btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- 背景 -->
+        <div class="section">
+            <h2 class="section-title">背景</h2>
+            <div class="section-content">
+                <div class="highlight-box">
+                    <p>对于AI发展现状的理解：在执行层面，AI的能力越来越强，通过Skills了解执行流程，通过MCP获取数据、执行工具。但目前AI发展的不足主要在于没有办法主动去发现和探知用户需求。</p>
+                </div>
+                <p style="font-size: 14px; color: #555; line-height: 1.7;">
+                    用户层面拥有海量的数据可以提供对用户的洞察，同时也是获取用户意图的好方式。因为有时候用户本身对于自身的意图也存在不明晰，有可能会遗忘的风险，而数据不会说谎。
+                </p>
+            </div>
+        </div>
+
+        <!-- 目标 -->
+        <div class="section">
+            <h2 class="section-title">目标</h2>
+            <div class="section-content">
+                <p style="font-size: 15px; color: #333; line-height: 1.7;">
+                    希望做一个能够<strong>无感收集用户行为</strong>，通过用户的行为数据推断用户需求并为AI形成可执行的方案，从而达到<strong>AI接替人类进行任务执行</strong>的目标。
+                </p>
+            </div>
+        </div>
+
+        <!-- 步骤 -->
+        <div class="section">
+            <h2 class="section-title">实现步骤</h2>
+            <div class="section-content">
+                <!-- 步骤1 -->
+                <div class="step">
+                    <div class="step-title">
+                        <span class="step-number">1</span>
+                        任务收集
+                    </div>
+                    <div class="step-desc">
+                        对用户的初始数据进行收集，尤其是对用户的短期任务、长期任务进行收集与归纳。
+                    </div>
+                </div>
+
+                <!-- 步骤2 -->
+                <div class="step">
+                    <div class="step-title">
+                        <span class="step-number">2</span>
+                        日常数据收集
+                    </div>
+                    <div class="step-desc">
+                        收集来自多端的数据，并以时间戳为依据，进行多端数据的交叉融合，从而形成数据时间轴。
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">手机端</div>
+                        <ul class="sub-step-list">
+                            <li>通过iPhone自动化指令，每30min进行屏幕截图</li>
+                            <li>OCR信息提取，存于手机本地</li>
+                            <li>每晚11:30通过自动化指令召唤起AirDrop，并Drop至本地电脑</li>
+                        </ul>
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">浏览器端</div>
+                        <ul class="sub-step-list">
+                            <li>通过浏览器插件，收集访问网站、停留时长、用户行为（复制、粘贴、搜索）</li>
+                            <li>提供下载功能，让用户一键将记录下载于本地</li>
+                        </ul>
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">大模型端</div>
+                        <ul class="sub-step-list">
+                            <li>通过定期在Claude Code执行口令，收集聊天记录数据</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 步骤3 -->
+                <div class="step">
+                    <div class="step-title">
+                        <span class="step-number">3</span>
+                        数据清洗
+                    </div>
+                    <div class="step-desc">
+                        对来自多端的数据进行清洗、去除杂数据。
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">浏览器端</div>
+                        <ul class="sub-step-list">
+                            <li>数据清洗与合并，对无用数据进行清洗</li>
+                        </ul>
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">大模型端</div>
+                        <ul class="sub-step-list">
+                            <li>根据对话时间等进行Session切分</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 步骤4 -->
+                <div class="step">
+                    <div class="step-title">
+                        <span class="step-number">4</span>
+                        时间轴生成
+                    </div>
+                    <div class="step-desc">
+                        根据来自多端数据的时间戳，按照时间的先后顺序整理成时间轴的形式。
+                    </div>
+                </div>
+
+                <!-- 步骤5 -->
+                <div class="step">
+                    <div class="step-title">
+                        <span class="step-number">5</span>
+                        时间轴与任务对应
+                    </div>
+                    <div class="step-desc">
+                        将用户时间轴与任务一一对应，判别各任务目前执行的情况，有哪些可以辅助完成的工作。
+                    </div>
+                </div>
+
+                <!-- 步骤6 -->
+                <div class="step">
+                    <div class="step-title">
+                        <span class="step-number">6</span>
+                        提示词生成
+                    </div>
+                    <div class="step-desc">
+                        根据判别到的用户需完成的工作，生成可以被OpenClaw识别并执行的准确任务。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Chehaoyuan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

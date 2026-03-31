@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WXmate - Chehaoyuan</title>
+    <link rel="stylesheet" href="./css/portfoliostyle.css">
+    <style>
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .project-hero {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+        }
+
+        .project-hero h1 {
+            font-size: 32px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .project-hero .subtitle {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .section {
+            background-color: #fff;
+            border: 2px solid #333;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .section-content {
+            padding-left: 10px;
+        }
+
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .content-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .content-text:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-text strong {
+            color: #333;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            font-size: 14px;
+            color: #555;
+            padding: 10px 0;
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+
+        .info-item .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .info-item .label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?394230268d0f754de608eb4e72165042";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="./index.html" class="logo-link">
+                <div class="logo-image"></div>
+            </a>
+            <span class="logo-text">Chehaoyuan</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <a href="./portfolio.html" class="back-link">← Back to Portfolio</a>
+
+        <div class="project-hero">
+            <h1>WXMATE</h1>
+            <p class="subtitle">Personal AI Clone Experiment</p>
+        </div>
+
+        <!-- 背景 -->
+        <div class="section">
+            <h2 class="section-title">背景</h2>
+            <div class="section-content">
+                <div class="highlight-box">
+                    <p>让基模真正模拟个人的思想与表达能力，是将Agent的Token消耗有效转化为个人效能提升的关键。</p>
+                </div>
+                <p class="content-text">
+                    因此，开展了一个<strong>实验性项目</strong>，探索模型究竟能在多大程度上实现真人模拟。
+                </p>
+            </div>
+        </div>
+
+        <!-- 项目顶层设计 -->
+        <div class="section">
+            <h2 class="section-title">项目顶层设计</h2>
+            <div class="section-content">
+                <p class="content-text">
+                    基于模型能力与微调成本调研，决定选取 <strong>Qwen3.5-7B模型</strong>，构建约1000条数据的数据集进行微调任务。
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="value">Qwen3.5-7B</div>
+                        <div class="label">Base Model</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="value">~1000</div>
+                        <div class="label">Training Data</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="value">Fine-tuning</div>
+                        <div class="label">Method</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 微调数据集构建 -->
+        <div class="section">
+            <h2 class="section-title">微调数据集构建</h2>
+            <div class="section-content">
+                <p class="content-text">
+                    通过对微信聊天记录进行<strong>导出、筛选、打标</strong>，选取其中的聊天记录进行数据集构建，并补充其中的Thinking字段。
+                </p>
+
+                <ul class="feature-list">
+                    <li><strong>数据导出</strong>：导出微信聊天记录</li>
+                    <li><strong>数据筛选</strong>：选取高质量、有代表性的聊天内容</li>
+                    <li><strong>数据打标</strong>：对聊天内容进行标注</li>
+                    <li><strong>Thinking字段</strong>：让模型既能模拟个人表达，也能模拟个人思考方式</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 核心价值 -->
+        <div class="section">
+            <h2 class="section-title">核心价值</h2>
+            <div class="section-content">
+                <ul class="feature-list">
+                    <li>将Agent的Token消耗<strong>有效转化为个人效能提升</strong></li>
+                    <li>探索模型实现<strong>真人模拟</strong>的可能性边界</li>
+                    <li>构建<strong>个人化AI助手</strong>的可行方案</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Chehaoyuan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

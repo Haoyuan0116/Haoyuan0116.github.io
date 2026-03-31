@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chehaoyuan</title>
+    <link rel="stylesheet" href="./css/portfoliostyle.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?394230268d0f754de608eb4e72165042";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        /* Modal for image/video display */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            display: block;
+        }
+
+        .modal-content video {
+            max-width: 100%;
+            max-height: 90vh;
+            display: block;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="./index.html" class="logo-link">
+                <div class="logo-image"></div>
+            </a>
+            <span class="logo-text">Chehaoyuan</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title">Portfolio</h1>
+        <p class="page-subtitle">A collection of my work</p>
+
+        <!-- Dropdown 1: LLM assisted...clone HUMAN -->
+        <div class="dropdown-section">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">
+                <span class="dropdown-title">LLM assisted...clone HUMAN</span>
+                <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="dropdown-content">
+                <div class="projects-grid">
+                    <!-- Project 1: Soulworker -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">⚡</span>
+                            <h3 class="project-name">Soulworker</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-label">项目背景</p>
+                            <p class="project-text">AI若要成为真正的人类工作助手，需要同时具备强大的执行能力和需求发现能力。</p>
+
+                            <p class="project-label">核心功能</p>
+                            <ul class="project-list">
+                                <li>收集用户短期、长期工作任务</li>
+                                <li>结合用户线上行为数据分析任务执行情况</li>
+                                <li>主动判定可辅助执行的工作</li>
+                                <li>AI自动执行辅助任务</li>
+                            </ul>
+
+                            <p class="project-label">目标</p>
+                            <p class="project-text">实现AI辅助人类进行多任务并行操作。</p>
+
+                            <div class="project-buttons">
+                                <a href="./soulworker.html" class="project-btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: WXmate -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🧠</span>
+                            <h3 class="project-name">WXmate</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-label">核心理念</p>
+                            <p class="project-text">将Agent的Token消耗有效转化为个人效能提升的关键在于：让大模型真正模拟个人的思想与表达能力。</p>
+
+                            <p class="project-label">项目目标</p>
+                            <ul class="project-list">
+                                <li>探索模型能在多大程度上实现真人模拟</li>
+                                <li>实验性项目，验证个人化Agent的可行性</li>
+                            </ul>
+
+                            <div class="project-buttons">
+                                <a href="./wxmate.html" class="project-btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdown 2: LLM in specific domain -->
+        <div class="dropdown-section">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">
+                <span class="dropdown-title">LLM in specific domain</span>
+                <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="dropdown-content">
+                <div class="projects-grid">
+                    <!-- Project 3: PsyMooc -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🩺</span>
+                            <h3 class="project-name">基于LLM的精神科患者模拟</h3>
+                            <span class="project-badge">DIS'26</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-label">研究问题</p>
+                            <p class="project-text">精神科临床面谈是住院医师的核心技能，但现有模拟教学工具交互僵化，无法满足自主练习需求。</p>
+
+                            <p class="project-label">解决方案</p>
+                            <ul class="project-list">
+                                <li>开发PsyMooc系统，利用LLM增强SBE</li>
+                                <li>支持开放式面谈交互</li>
+                                <li>LLM驱动的Agent提供个性化反馈</li>
+                            </ul>
+
+                            <p class="project-label">研究成果</p>
+                            <p class="project-text">高可用性，显著提升住院医师的临床信心和面谈表现。</p>
+
+                            <div class="project-buttons">
+                                <button class="project-btn" onclick="openModal('./assets/profolio/PsyMooc/Main.png', 'image')">查看工作流大图</button>
+                                <button class="project-btn" onclick="openModal('./assets/profolio/PsyMooc/Video.mp4', 'video')">查看视频</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: FlightAxis -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">✈️</span>
+                            <h3 class="project-name">基于LLM的飞行训练助手</h3>
+                            <span class="project-badge">IJCAI'25</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-label">研究问题</p>
+                            <p class="project-text">传统飞行训练依赖一对一指导，存在培训质量受限、获取技能难度高的问题。</p>
+
+                            <p class="project-label">解决方案</p>
+                            <ul class="project-list">
+                                <li>开发FlightAxis原型系统</li>
+                                <li>LLM评估表现并给出指令</li>
+                                <li>结合肌肉电刺激(EMS)提供实时反馈</li>
+                            </ul>
+
+                            <p class="project-label">研究成果</p>
+                            <p class="project-text">显著提升操作质量，为各领域技能培训提供新范式。</p>
+
+                            <div class="project-buttons">
+                                <button class="project-btn" onclick="openModal('./assets/profolio/HandbyHand/Main.png', 'image')">查看工作流大图</button>
+                                <button class="project-btn" onclick="openModal('./assets/profolio/HandbyHand/video.mp4', 'video')">查看视频</button>
+                                <a href="https://www.ijcai.org/proceedings/2025/1148" class="project-btn" target="_blank">查看原文</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Chehaoyuan. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for image/video display -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script>
+        function toggleDropdown(btn) {
+            const content = btn.nextElementSibling;
+            const arrow = btn.querySelector('.dropdown-arrow');
+
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                arrow.textContent = '▼';
+            } else {
+                content.classList.add('open');
+                arrow.textContent = '▲';
+            }
+        }
+
+        function openModal(src, type) {
+            const modal = document.getElementById('modal');
+            const content = document.getElementById('modalContent');
+
+            if (type === 'image') {
+                content.innerHTML = '<img src="' + src + '" alt="Workflow">';
+            } else if (type === 'video') {
+                content.innerHTML = '<video src="' + src + '" controls autoplay></video>';
+            }
+
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+
+            // Stop video when closing
+            const video = document.querySelector('#modalContent video');
+            if (video) {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>
